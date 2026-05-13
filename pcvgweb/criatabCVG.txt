@@ -16,6 +16,7 @@ create table CVGD000aChaveUnica (
 
 );
 insert into CVGD000aChaveUnica (D_ENTIDADE,D_ULTIMOID) values ('FUNCIONARIO',0);
+insert into CVGD000aChaveUnica (D_ENTIDADE,D_ULTIMOID) values ('PROJETO',0);
 insert into CVGD000aChaveUnica (D_ENTIDADE,D_ULTIMOID) values ('CASAVEG',0);
 
 //-----------------------------------------------------------------------------------
@@ -86,5 +87,59 @@ insert into CVGD002Cargo (D_IDCARGO,  D_DESCCARGO) values (2, 'ANALISTA P&D');
 insert into CVGD002Cargo (D_IDCARGO,  D_DESCCARGO) values (3, 'ANALISTA ADM');
 insert into CVGD002Cargo (D_IDCARGO,  D_DESCCARGO) values (4, 'ASSISTENTE');
 insert into CVGD002Cargo (D_IDCARGO,  D_DESCCARGO) values (5, 'TECNICO');
+
+
+//-----------------------------------------------------------------------------------
+drop table CVGD003Projeto;
+create table CVGD003Projeto (
+     D_IDPROJ        int,
+     D_CODPROJ       varchar(15),
+     D_DESCPROJ      varchar(200),
+     D_DTINIPROJ     varchar(8),
+     D_DTFIMPROJ     varchar(8),
+     D_IDSTATUSPROJ  int,
+     D_IDFUNCLIDER   int,
+     D_IDUSRINC      int,
+     D_DATAINC       varchar(8),
+     D_IDUSRALT      int,
+     D_DATAALT       varchar(8),
+
+     primary key (D_IDPROJ)
+
+);
+
+alter table CVGD003Projeto drop index CVGD003_I01;
+create unique index CVGD003_I01
+   on CVGD003Projeto(D_CODPROJ);
+   
+
+//-----------------------------------------------------------------------------------
+drop table CVGD004ColabProj;
+create table CVGD004ColabProj (
+     D_IDPROJ        int,
+     D_IDFUNCCOLAB   int,
+     D_DTINICOLAB    varchar(8),
+     D_DTFIMCOLAB    varchar(8),
+
+     primary key (D_IDPROJ, D_IDFUNCCOLAB)
+
+);
+
+
+//-----------------------------------------------------------------------------------
+drop table CVGD005StatusProj;
+create table CVGD005StatusProj (
+     D_IDSTATUSPROJ   int,
+     D_DESCSTATUSPROJ varchar(25),
+
+     primary key (D_IDSTATUSPROJ)
+
+);
+
+
+insert into CVGD005StatusProj (D_IDSTATUSPROJ,  D_DESCSTATUSPROJ) values (1, 'EM EXECUÇÃO');
+insert into CVGD005StatusProj (D_IDSTATUSPROJ,  D_DESCSTATUSPROJ) values (2, 'CANCELADO');
+insert into CVGD005StatusProj (D_IDSTATUSPROJ,  D_DESCSTATUSPROJ) values (3, 'ENCERRADO COM SUCESSO');
+insert into CVGD005StatusProj (D_IDSTATUSPROJ,  D_DESCSTATUSPROJ) values (4, 'ENCERRADO COM FALHA');
 
 
