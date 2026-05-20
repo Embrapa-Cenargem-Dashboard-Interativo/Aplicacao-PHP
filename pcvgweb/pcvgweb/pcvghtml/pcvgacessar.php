@@ -8,13 +8,13 @@
 <head>    
 <?php require("../pcvginc/pcvgTAGMETA01.inc") ?>   
 <?php require("../pcvginc/pcvgTAGTITLELINK01.inc") ?>
-<script language="JavaScript" type="text/JavaScript" src="../pcenajax/pcenajaxbib1.js">
+<script language="JavaScript" type="text/JavaScript" src="../pcvgajax/pcvgajaxbib1.js">
 </script>
-<script language="JavaScript" type="text/JavaScript" src="../pjsgeral/jsgeral01AA.js">
+<script language="JavaScript" type="text/JavaScript" src="../pjsgeral/pjsgeral01.js">
 </script>
-<script language="JavaScript" type="text/JavaScript" src="../pcenjs/jscen01.js">
+<script language="JavaScript" type="text/JavaScript" src="../pcvgjs/jscvg01.js">
 </script>
-<script language="JavaScript" type="text/JavaScript" src="../pcenjs/js001_acessarAA.js">
+<script language="JavaScript" type="text/JavaScript" src="../pcvgjs/js001_acessarA.js">
 </script>
 </head>
 

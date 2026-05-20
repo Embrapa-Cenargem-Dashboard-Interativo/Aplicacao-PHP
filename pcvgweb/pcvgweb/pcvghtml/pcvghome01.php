@@ -22,7 +22,7 @@ function hover(picName) {
 
 <?php 
 //---> include the class file
-    include('../pcenhtml/pcenObjSessao.php'); 
+    include('../pcvghtml/pcvgObjSessao.php'); 
 
     if(session_id()){
        if (session_status() == 2) {  // 0 = PHP_SESSION_DISABLED  1 = PHP_SESSION_NONE  2 = PHP_SESSION_ACTIVE
