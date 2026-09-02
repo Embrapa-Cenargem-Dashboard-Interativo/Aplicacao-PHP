@@ -4,7 +4,7 @@ Repositório destinado ao desenvolvimento e à **validação das regras de negó
 
 ## Sobre o projeto
 
-Este repositório concentra uma implementação em **PHP** utilizada para testar e validar o funcionamento das principais regras de negócio da aplicação.
+Este repositório concentra uma implementação em **PHP**, juntamente com **HTML, CSS e JavaScript**, utilizada para testar e validar o funcionamento das principais regras de negócio da aplicação.
 
 O desenvolvimento ocorre de forma experimental, permitindo que as funcionalidades sejam implementadas e avaliadas junto ao **stakeholder**, verificando se o comportamento do sistema está de acordo com as necessidades e processos definidos para o gerenciamento dos espaços experimentais.
 
@@ -19,9 +19,12 @@ O repositório será utilizado para:
 * Experimentar soluções para o gerenciamento de pesquisadores, projetos, espaços e reservas;
 * Servir como ambiente de apoio para a definição e validação dos requisitos do sistema.
 
-## Tecnologia
+## Tecnologias
 
-* **PHP** - linguagem utilizada para o desenvolvimento e implementação das regras de negócio.
+* **PHP** - desenvolvimento das regras de negócio e processamento da aplicação;
+* **HTML** - estrutura das páginas;
+* **CSS** - estilização e organização visual;
+* **JavaScript** - comportamentos e interações da aplicação.
 
 ## Objetivo do repositório
 
